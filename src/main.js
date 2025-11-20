@@ -1,1 +1,23 @@
+import { Home } from "./components/home/home";
+import { LoginPage } from "./pages/login/login";
+import { onboardingPage } from "./pages/onboarding/onboarding";
+import { SignupPage } from "./pages/signup/signup";
 import "./style.css";
+import { router } from "./utils/router";
+let app = document.getElementById("app");
+router.addRoute("/onboarding", onboardingPage);
+router.addRoute("/login", LoginPage);
+router.addRoute("/signup", SignupPage);
+const onboardingSeen = localStorage.getItem("onboardingSeen");
+const userEntered = localStorage.getItem("userEntered");
+if (!onboardingSeen) {
+	router.addRoute("/onboarding", onboardingPage);
+	router.navigate("/onboarding");
+} else if (!userEntered) {
+	router.addRoute("/login", LoginPage);
+	router.navigate("/login");
+} else {
+	router.addRoute("/home", Home);
+	router.navigate("/home");
+}
+router.init(app);
