@@ -1,3 +1,4 @@
+import { SignUpUsers } from "../../api/signupOperation/signupOperation";
 import { El } from "../../utils/el";
 import { router } from "../../utils/router";
 let type = "password";
@@ -134,7 +135,10 @@ export function SignUp() {
 				eventListener: [
 					{
 						event: "click",
-						callback: () => {},
+						callback: () => {
+							SignUpUsers();
+							router.navigate("/login");
+						},
 					},
 				],
 			}),
