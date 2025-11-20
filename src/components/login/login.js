@@ -1,3 +1,4 @@
+import { LoginUser } from "../../api/loginOperation/loginOperation";
 import { El } from "../../utils/el";
 import { router } from "../../utils/router";
 export function Login() {
@@ -129,7 +130,9 @@ export function Login() {
 				eventListener: [
 					{
 						event: "click",
-						callback: () => {},
+						callback: () => {
+							LoginUser();
+						},
 					},
 				],
 			}),
