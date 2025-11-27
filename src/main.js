@@ -1,3 +1,4 @@
+import { CartPage } from "./pages/cart/cart";
 import { HomePage } from "./pages/home/home";
 import { LoginPage } from "./pages/login/login";
 import { onboardingPage } from "./pages/onboarding/onboarding";
@@ -10,6 +11,7 @@ router.addRoute("/onboarding", onboardingPage);
 router.addRoute("/login", LoginPage);
 router.addRoute("/signup", SignupPage);
 router.addRoute("/home", HomePage);
+router.addRoute("/cart", CartPage);
 router.addRoute("/product", SingleproductPage);
 const onboardingSeen = localStorage.getItem("onboardingSeen");
 const userEntered = localStorage.getItem("userEntered");
