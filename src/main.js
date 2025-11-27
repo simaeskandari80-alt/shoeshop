@@ -1,3 +1,4 @@
+import { Checkout } from "./components/checkout/checkout";
 import { CartPage } from "./pages/cart/cart";
 import { HomePage } from "./pages/home/home";
 import { LoginPage } from "./pages/login/login";
