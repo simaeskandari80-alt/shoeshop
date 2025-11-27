@@ -1,18 +1,18 @@
 import { El } from "../../utils/el";
 import { router } from "../../utils/router";
 import { store } from "../../utils/store";
-export function Shipping() {
-	let shippingContainer = El({
+export function shippingAddress() {
+	let shippingAddressContainer = El({
 		element: "div",
 	});
-	shippingContainer.append(
-		shippingHeader(),
-		shippingOptions(),
-		shippingFooter()
+	shippingAddressContainer.append(
+		shippingAddressHeader(),
+		shippingAddressOptions(),
+		shippingAddressFooter()
 	);
-	return shippingContainer;
+	return shippingAddressContainer;
 }
-function shippingHeader() {
+function shippingAddressHeader() {
 	return El({
 		element: "div",
 		className: "flex items-center gap-5 absolute left-6 top-[60px]",
@@ -32,13 +32,13 @@ function shippingHeader() {
 			}),
 			El({
 				element: "div",
-				innerHTML: "Choose Shipping",
+				innerHTML: "Shipping Address",
 				className: "text-3xl font-semibold",
 			}),
 		],
 	});
 }
-function shippingOptions() {
+function shippingAddressOptions() {
 	return El({
 		element: "div",
 		className: " flex flex-col",
@@ -57,11 +57,16 @@ function shippingOptions() {
 								className: "flex items-center gap-2",
 								children: [
 									El({
-										element: "img",
-										src: "/src/assests/images/shipping-economy.svg",
-										className: "w-12 h-12",
+										element: "div",
+										className: "rounded-full bg-gray-300 w-16 h-16 relative",
+										children: [
+											El({
+												element: "img",
+												src: "/src/assests/images/location-filled-svgrepo-com.svg",
+												className: "w-12 h-12 absolute left-2 top-[7.5px]",
+											}),
+										],
 									}),
-
 									El({
 										element: "div",
 										children: [
@@ -71,39 +76,38 @@ function shippingOptions() {
 												children: [
 													El({
 														element: "div",
-														innerHTML: "Economy",
+														innerHTML: "Home",
 														className: "font-bold text-[18px]",
+													}),
+													El({
+														element: "div",
+														className:
+															"bg-[#f3f3f3] px-2 py-0.5 rounded-lg font-medium",
+														innerHTML: "Default",
 													}),
 												],
 											}),
 											El({
 												element: "div",
-												innerHTML: "Estimated Arrival,Dec 20-23",
+												innerHTML: "61480 Sunbrook Park,Pc 5679",
 											}),
 										],
 									}),
 								],
 							}),
 							El({
-								element: "div",
-								innerHTML: "$10",
-								className: "font-bold",
-							}),
-							El({
 								element: "input",
 								type: "radio",
 								className: "w-5 h-5  accent-black",
-								name: "shipping",
-								value: "economy",
+								name: "shippingAddress",
+								value: "home",
 								eventListener: [
 									{
 										event: "change",
 										callback: () => {
-											store.setState("selectShipping", {
-												title: "Economy",
-												arival: "EEstimated Arrival,Dec 20-23",
-												price: "10",
-												imageUrl: "/src/assests/images/shipping-economy.svg",
+											store.setState("selectAddress", {
+												title: "Home",
+												address: "61480 Sunbrook Park, PC 5679",
 											});
 										},
 									},
@@ -127,11 +131,16 @@ function shippingOptions() {
 								className: "flex items-center gap-2",
 								children: [
 									El({
-										element: "img",
-										src: "/src/assests/images/shipping-regular.svg",
-										className: "w-12 h-12",
+										element: "div",
+										className: "rounded-full bg-gray-300 w-16 h-16 relative",
+										children: [
+											El({
+												element: "img",
+												src: "/src/assests/images/location-filled-svgrepo-com.svg",
+												className: "w-12 h-12 absolute left-2 top-[7.5px]",
+											}),
+										],
 									}),
-
 									El({
 										element: "div",
 										children: [
@@ -141,39 +150,32 @@ function shippingOptions() {
 												children: [
 													El({
 														element: "div",
-														innerHTML: "Regular",
+														innerHTML: "Office",
 														className: "font-bold text-[18px]",
 													}),
 												],
 											}),
 											El({
 												element: "div",
-												innerHTML: "Estimated Arrival,Dec 20-22",
+												innerHTML: "6993 Meadow Valley Terra,PC 3637",
 											}),
 										],
 									}),
 								],
 							}),
 							El({
-								element: "div",
-								innerHTML: "$15",
-								className: "font-bold",
-							}),
-							El({
 								element: "input",
 								type: "radio",
-								className: "w-5 h-5 accent-black",
-								name: "shipping",
-								value: "regular",
+								className: "w-5 h-5  accent-black",
+								name: "shippingAddress",
+								value: "office",
 								eventListener: [
 									{
 										event: "change",
 										callback: () => {
-											store.setState("selectShipping", {
-												title: "Regular",
-												arival: "Estimated Arrival,Dec 20-22",
-												price: "15",
-												imageUrl: "src/assests/images/shipping-regular.svg",
+											store.setState("selectAddress", {
+												title: "Office",
+												address: "6993 Meadow Valley Terra,PC 3637",
 											});
 										},
 									},
@@ -197,11 +199,16 @@ function shippingOptions() {
 								className: "flex items-center gap-2",
 								children: [
 									El({
-										element: "img",
-										src: "/src/assests/images/shipping-cargo.svg",
-										className: "w-12 h-12",
+										element: "div",
+										className: "rounded-full bg-gray-300 w-16 h-16 relative",
+										children: [
+											El({
+												element: "img",
+												src: "/src/assests/images/location-filled-svgrepo-com.svg",
+												className: "w-12 h-12 absolute left-2 top-[7.5px]",
+											}),
+										],
 									}),
-
 									El({
 										element: "div",
 										children: [
@@ -211,39 +218,32 @@ function shippingOptions() {
 												children: [
 													El({
 														element: "div",
-														innerHTML: "Cargo",
+														innerHTML: "Apartment",
 														className: "font-bold text-[18px]",
 													}),
 												],
 											}),
 											El({
 												element: "div",
-												innerHTML: "Estimated Arrival,Dec 19-20",
+												innerHTML: "21833 Meadow Clyde Gallegher,pc 4662",
 											}),
 										],
 									}),
 								],
 							}),
 							El({
-								element: "div",
-								innerHTML: "$20",
-								className: "font-bold",
-							}),
-							El({
 								element: "input",
 								type: "radio",
 								className: "w-5 h-5  accent-black",
-								name: "shipping",
-								value: "cargo",
+								name: "shippingAddress",
+								value: "Apartment",
 								eventListener: [
 									{
 										event: "change",
 										callback: () => {
-											store.setState("selectShipping", {
-												title: "Cargo",
-												arival: "Estimated Arrival,Dec 19-20",
-												price: "20",
-												imageUrl: "src/assests/images/shipping-cargo.svg",
+											store.setState("selectAddress", {
+												title: "Apartment",
+												address: "21833 Meadow Clyde Gallegher,pc 4662",
 											});
 										},
 									},
@@ -267,11 +267,16 @@ function shippingOptions() {
 								className: "flex items-center gap-2",
 								children: [
 									El({
-										element: "img",
-										src: "/src/assests/images/shipping-express.svg",
-										className: "w-12 h-12 ",
+										element: "div",
+										className: "rounded-full bg-gray-300 w-16 h-16 relative",
+										children: [
+											El({
+												element: "img",
+												src: "/src/assests/images/location-filled-svgrepo-com.svg",
+												className: "w-12 h-12 absolute left-2 top-[7.5px]",
+											}),
+										],
 									}),
-
 									El({
 										element: "div",
 										children: [
@@ -281,40 +286,32 @@ function shippingOptions() {
 												children: [
 													El({
 														element: "div",
-														innerHTML: "Express",
+														innerHTML: "Parent's House",
 														className: "font-bold text-[18px]",
 													}),
 												],
 											}),
 											El({
 												element: "div",
-												innerHTML: "Estimated Arrival,Dec 18-19",
+												innerHTML: "5259 Blue Bill Park,PC 4627",
 											}),
 										],
 									}),
 								],
 							}),
 							El({
-								element: "div",
-								innerHTML: "$30",
-								className: "font-bold",
-							}),
-
-							El({
 								element: "input",
 								type: "radio",
-								className: "w-5 h-5  accent-black",
-								name: "shipping",
-								value: "express",
+								className: "w-5 h-5 accent-black",
+								name: "shippingAddress",
+								value: "parent",
 								eventListener: [
 									{
 										event: "change",
 										callback: () => {
-											store.setState("selectShipping", {
-												title: "Express",
-												arival: "Estimated Arrival,Dec 18-19",
-												price: "30",
-												imageUrl: "src/assests/images/shipping-express.svg",
+											store.setState("selectAddress", {
+												title: "Parent's House",
+												address: "5259 Blue Bill Park,PC 4627",
 											});
 										},
 									},
@@ -324,10 +321,16 @@ function shippingOptions() {
 					}),
 				],
 			}),
+			El({
+				element: "button",
+				innerHTML: "Add New Address",
+				className:
+					" bg-gray-300 absolute top-[650px] left-6 right-6 rounded-3xl py-4 font-bold",
+			}),
 		],
 	});
 }
-function shippingFooter() {
+function shippingAddressFooter() {
 	return El({
 		element: "div",
 		className:
