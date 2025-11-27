@@ -13,6 +13,8 @@ router.addRoute("/signup", SignupPage);
 router.addRoute("/home", HomePage);
 router.addRoute("/cart", CartPage);
 router.addRoute("/product", SingleproductPage);
+router.addRoute("/checkout", Checkout);
+router.addRoute("/checkout/:step", Checkout);
 const onboardingSeen = localStorage.getItem("onboardingSeen");
 const userEntered = localStorage.getItem("userEntered");
 if (!onboardingSeen) {
