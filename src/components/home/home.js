@@ -1,9 +1,9 @@
 import { El } from "../../utils/el";
-import { seeALL, ShowBrand } from "./brands";
-import { footerHome } from "./footerHome";
-import { HeaderHome } from "./HeaderHome";
-import { productCardContainer } from "./products";
-import { searchFormHome } from "./search";
+import { footerHome } from "./homeFooter";
+import { HeaderHome } from "./homeHeader";
+import { searchFormHome } from "./HomeSearchForm";
+import { productCardContainer } from "./product";
+import { ShowBrand, seeALL } from "./productBrand";
 
 export function Home() {
 	let homeContainer = El({

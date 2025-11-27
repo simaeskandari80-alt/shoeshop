@@ -1,4 +1,4 @@
-import { BASE_URL } from "../../constants";
+import { BASE_URL } from "../../constants/BASE-URL";
 import { El } from "../../utils/el";
 
 export async function getBrand() {

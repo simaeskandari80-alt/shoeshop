@@ -1,13 +1,16 @@
-import { Home } from "./components/home/home";
+import { HomePage } from "./pages/home/home";
 import { LoginPage } from "./pages/login/login";
 import { onboardingPage } from "./pages/onboarding/onboarding";
 import { SignupPage } from "./pages/signup/signup";
+import { SingleproductPage } from "./pages/single-product/single-product";
 import "./style.css";
 import { router } from "./utils/router";
 let app = document.getElementById("app");
 router.addRoute("/onboarding", onboardingPage);
 router.addRoute("/login", LoginPage);
 router.addRoute("/signup", SignupPage);
+router.addRoute("/home", HomePage);
+router.addRoute("/product", SingleproductPage);
 const onboardingSeen = localStorage.getItem("onboardingSeen");
 const userEntered = localStorage.getItem("userEntered");
 if (!onboardingSeen) {
@@ -17,7 +20,7 @@ if (!onboardingSeen) {
 	router.addRoute("/login", LoginPage);
 	router.navigate("/login");
 } else {
-	router.addRoute("/home", Home);
+	router.addRoute("/home", HomePage);
 	router.navigate("/home");
 }
 router.init(app);

@@ -1,5 +1,5 @@
-import { BASE_URL } from "../constants";
-import { router } from "../utils/router";
+import { BASE_URL } from "../../constants/BASE-URL";
+import { router } from "../../utils/router";
 
 export async function LoginUser() {
 	const usernameInput = document.getElementById("login-username");

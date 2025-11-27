@@ -13,7 +13,7 @@ export function footerHome() {
 				children: [
 					El({
 						element: "img",
-						src: "src/assests/images/Vector (2).png",
+						src: "/src/assests/images/Vector (2).png",
 						className: "w-6 h-6",
 					}),
 					El({ element: "div", innerHTML: "Home" }),
@@ -25,7 +25,7 @@ export function footerHome() {
 				children: [
 					El({
 						element: "img",
-						src: "src/assests/images/bag (1).png",
+						src: "/src/assests/images/bag (1).png",
 						className: "w-6 h-6",
 					}),
 					El({ element: "div", innerHTML: "Cart" }),

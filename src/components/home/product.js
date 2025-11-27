@@ -1,4 +1,5 @@
 import { El } from "../../utils/el";
+import { router } from "../../utils/router";
 export async function productCardContainer() {
 	return El({
 		element: "div",
@@ -41,6 +42,14 @@ export async function productCard() {
 							element: "img",
 							src: item.imageURL,
 							className: "w-[182px] h-[182px] rounded-3xl",
+							eventListener: [
+								{
+									event: "click",
+									callback: () => {
+										router.navigate(`/product?id=${item.id}`);
+									},
+								},
+							],
 						}),
 					],
 				}),
