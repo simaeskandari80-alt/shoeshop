@@ -1,5 +1,5 @@
 import { debounce } from "lodash";
-import { searchSneakers } from "../../api/search-sneakers";
+import { searchSneakers } from "../../api/search-sneakers/search-sneakers";
 import { El } from "../../utils/el";
 import { router } from "../../utils/router";
 //search form
