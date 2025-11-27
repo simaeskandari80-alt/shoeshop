@@ -1,4 +1,5 @@
 import { El } from "../../utils/el";
+import { router } from "../../utils/router";
 export function searchFormHome() {
 	return El({
 		element: "div",
@@ -10,6 +11,14 @@ export function searchFormHome() {
 					" flex items-center content-center w-[380px] h-[37px] z-0 rounded-sm pt-2 pl-8 pr-3 pb-2 bg-[#FAFAFA] absolute text-[14px] font-normal",
 				placeholder: "Search",
 				id: "login-username",
+				eventListener: [
+					{
+						event: "click",
+						callback: () => {
+							router.navigate("/search");
+						},
+					},
+				],
 			}),
 			El({
 				element: "img",
