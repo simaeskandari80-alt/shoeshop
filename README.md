@@ -40,7 +40,7 @@ practical experience in building real-world web applications.
 ### 🏠 Home Page
 
 <p align="center">
-  <img src="./src/screenshots/home.png" width="800" alt="Shoe Shop Home Page">
+  <img src="./src/screenshots/home.png" width="100" alt="Shoe Shop Home Page">
 </p>
 
 ---
@@ -48,7 +48,7 @@ practical experience in building real-world web applications.
 ### 👟 Products
 
 <p align="center">
-  <img src="./src/screenshots/products.png" width="800" alt="Shoe Shop Products">
+  <img src="./src/screenshots/products.png" width="100" alt="Shoe Shop Products">
 </p>
 
 ---
@@ -56,7 +56,7 @@ practical experience in building real-world web applications.
 ### 🛒 Shopping Cart
 
 <p align="center">
-  <img src="./src/screenshots/cart.png" width="800" alt="Shoe Shop Shopping Cart">
+  <img src="./src/screenshots/cart.png" width="100" alt="Shoe Shop Shopping Cart">
 </p>
 
 ---
@@ -64,7 +64,7 @@ practical experience in building real-world web applications.
 ### 💳 Checkout
 
 <p align="center">
-  <img src="./src/screenshots/checkout.png" width="800" alt="Shoe Shop Checkout">
+  <img src="./src/screenshots/checkout.png" width="100" alt="Shoe Shop Checkout">
 </p>
 
 ## 🚀 Live Demo
