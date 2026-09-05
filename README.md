@@ -1,25 +1,29 @@
 # 🛍 Shoe Shop
 
-A modern and responsive shopping website built with Vanilla JavaScript.
-
----
+A modern and responsive e-commerce website built with Vanilla JavaScript.
 
 ## 📖 About
 
-Shoe Shop is an e-commerce frontend project that allows users to browse products, search items and manage their shopping cart through a clean and responsive interface.
+Shoe Shop is a frontend e-commerce project that allows users to browse
+products, search for items, view product details, and manage their
+shopping cart through a clean and responsive interface.
 
-This project was built to strengthen my JavaScript skills and gain experience in building real-world user interfaces.
+This project was built to strengthen my JavaScript skills and gain
+practical experience in building real-world web applications.
 
 ---
 
 ## ✨ Features
 
-- Responsive Design
-- Product Listing
-- Product Search
-- Shopping Cart
-- Local Storage
-- Clean UI
+- 📱 Responsive Design
+- 🛍 Product Listing
+- 🔍 Product Search
+- 👟 Product Details
+- 🛒 Shopping Cart
+- 💾 Local Storage
+- ❤️ Wishlist
+- 📦 Product Categories
+- 🎨 Clean and Modern UI
 
 ---
 
@@ -28,72 +32,62 @@ This project was built to strengthen my JavaScript skills and gain experience in
 - HTML5
 - CSS3
 - JavaScript
+- Local Storage
+- Git & GitHub
 
 ---
 
 ## 📷 Screenshots
 
-### Home Page
+### 🏠 Home Page
 
-![Home Page](./screenshots/Screenshot (1493).png)
-
----
-
-### Product Page
-
-![Product Page](./screenshots/product.png)
+<p align="center">
+  <img src="./screenshots/home.png" width="800" alt="Shoe Shop Home Page">
+</p>
 
 ---
 
-### Cart
+### 👟 Products
 
-![Cart](./screenshots/cart.png)
-
-### Product Page
-
-(Add Screenshot Here)
+<p align="center">
+  <img src="./screenshots/products.png" width="800" alt="Shoe Shop Products">
+</p>
 
 ---
 
-### Cart
+### 🔎 Product Details
 
-(Add Screenshot Here)
+<p align="center">
+  <img src="./screenshots/product-details.png" width="800" alt="Shoe Shop Product Details">
+</p>
+
+---
+
+### 🛒 Shopping Cart
+
+<p align="center">
+  <img src="./screenshots/cart.png" width="800" alt="Shoe Shop Shopping Cart">
+</p>
+
+---
+
+### 💳 Checkout
+
+<p align="center">
+  <img src="./screenshots/checkout.png" width="800" alt="Shoe Shop Checkout">
+</p>
 
 ---
 
 ## 🚀 Live Demo
 
-https://YOUR_VERCEL_LINK
+[View Live Demo](https://YOUR_VERCEL_LINK)
 
 ---
 
 ## 💻 Installation
 
+Clone the repository:
+
 ```bash
 git clone https://github.com/simaeskandari80-alt/shoeshop.git
-
-cd shoeshop
-```
-
-Run with Live Server.
-
----
-
-## 📂 Project Structure
-
-```
-assets/
-css/
-js/
-index.html
-```
-
----
-
-## 👩‍💻 Author
-
-Sima Eskandari
-
-GitHub
-
-https://github.com/simaeskandari80-alt
