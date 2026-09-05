@@ -66,7 +66,6 @@ practical experience in building real-world web applications.
 <p align="center">
   <img src="./src/screenshots/checkout.png" width="800" alt="Shoe Shop Checkout">
 </p>
----
 
 ## 🚀 Live Demo
 
