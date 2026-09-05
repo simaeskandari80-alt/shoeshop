@@ -15,7 +15,6 @@ practical experience in building real-world web applications.
 
 ## ✨ Features
 
-- 📱 Responsive Design
 - 🛍 Product Listing
 - 🔍 Product Search
 - 👟 Product Details
@@ -37,7 +36,7 @@ practical experience in building real-world web applications.
 
 ---
 
-### 🏠 Home Page
+### ✨ Products
 
 <p align="center">
   <img src="./src/screenshots/home.png" width="100" alt="Shoe Shop Home Page">
@@ -45,7 +44,7 @@ practical experience in building real-world web applications.
 
 ---
 
-### 👟 Products
+### 👟 Single Product
 
 <p align="center">
   <img src="./src/screenshots/products.png" width="100" alt="Shoe Shop Products">
