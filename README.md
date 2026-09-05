@@ -35,9 +35,19 @@ This project was built to strengthen my JavaScript skills and gain experience in
 
 ### Home Page
 
-(Add Screenshot Here)
+![Home Page](./screenshots/Screenshot (1493).png)
 
 ---
+
+### Product Page
+
+![Product Page](./screenshots/product.png)
+
+---
+
+### Cart
+
+![Cart](./screenshots/cart.png)
 
 ### Product Page
 
