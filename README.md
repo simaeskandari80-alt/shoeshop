@@ -1,45 +1,56 @@
-# 🛍 Shoe Shop
+# 👟 Shoe Shop
 
-A modern and responsive e-commerce website built with Vanilla JavaScript.
+> A modern, responsive e-commerce frontend built with Vanilla JavaScript.
 
-## 📖 About
+Shoe Shop is a frontend e-commerce project designed to simulate a real-world
+online shoe store experience.
 
-Shoe Shop is a frontend e-commerce project that allows users to browse
-products, search for items, view product details, and manage their
-shopping cart through a clean and responsive interface.
+The project focuses on building interactive UI components, managing product
+data, implementing shopping cart functionality, and working with browser
+storage using Vanilla JavaScript.
 
-This project was built to strengthen my JavaScript skills and gain
-practical experience in building real-world web applications.
+---
+
+## 🌐 Live Demo
+
+🚀 **[View Live Demo](https://YOUR_VERCEL_LINK)**
 
 ---
 
 ## ✨ Features
 
-- 🛍 Product Listing
-- 🔍 Product Search
+- 🛍️ Product Listing
+- 🔎 Product Search
+- 🏷️ Product Categories
 - 👟 Product Details
 - 🛒 Shopping Cart
-- 💾 Local Storage
 - ❤️ Wishlist
-- 📦 Product Categories
-- 🎨 Clean and Modern UI
+- 💾 Local Storage
+- 📱 Fully Responsive Design
+- ⚡ Dynamic UI Updates
+- 🎨 Clean & Modern User Interface
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
-- HTML5
-- CSS3
-- JavaScript
-- Local Storage
-- Git & GitHub
+| Technology | Usage |
+|------------|-------|
+| HTML5 | Semantic page structure |
+| CSS3 | Styling & responsive layout |
+| JavaScript | Application logic & DOM manipulation |
+| Local Storage | Persisting cart & wishlist data |
+| Git | Version control |
+| GitHub | Repository & project management |
 
 ---
+
+## 📸 Screenshots
 
 ### ✨ Products
 
 <p align="center">
-  <img src="./src/screenshots/home.png" width="100" alt="Shoe Shop Home Page">
+  <img src="./src/screenshots/home.png" width="350" alt="Shoe Shop Products">
 </p>
 
 ---
@@ -47,7 +58,7 @@ practical experience in building real-world web applications.
 ### 👟 Single Product
 
 <p align="center">
-  <img src="./src/screenshots/products.png" width="100" alt="Shoe Shop Products">
+  <img src="./src/screenshots/products.png" width="350" alt="Shoe Shop Single Product">
 </p>
 
 ---
@@ -55,7 +66,7 @@ practical experience in building real-world web applications.
 ### 🛒 Shopping Cart
 
 <p align="center">
-  <img src="./src/screenshots/cart.png" width="100" alt="Shoe Shop Shopping Cart">
+  <img src="./src/screenshots/cart.png" width="350" alt="Shoe Shop Shopping Cart">
 </p>
 
 ---
@@ -63,18 +74,50 @@ practical experience in building real-world web applications.
 ### 💳 Checkout
 
 <p align="center">
-  <img src="./src/screenshots/checkout.png" width="100" alt="Shoe Shop Checkout">
+  <img src="./src/screenshots/checkout.png" width="350" alt="Shoe Shop Checkout">
 </p>
-
-## 🚀 Live Demo
-
-[View Live Demo](https://YOUR_VERCEL_LINK)
 
 ---
 
-## 💻 Installation
+## 🎯 Project Goals
 
-Clone the repository:
+This project was built to strengthen my frontend development skills and gain
+practical experience with Vanilla JavaScript.
 
-```bash
-git clone https://github.com/simaeskandari80-alt/shoeshop.git
+### Main learning goals:
+
+- Working with the DOM
+- Handling user interactions
+- Managing application state
+- Creating reusable JavaScript functions
+- Working with arrays and objects
+- Implementing search and filtering
+- Managing shopping cart logic
+- Using Local Storage
+- Building responsive layouts
+- Structuring a real-world frontend project
+
+---
+
+## 📂 Project Structure
+
+```text
+shoeshop/
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   ├── css/
+│   ├── js/
+│   └── screenshots/
+│       ├── home.png
+│       ├── products.png
+│       ├── cart.png
+│       └── checkout.png
+│
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
